@@ -1,6 +1,6 @@
 {
   "name": "mona-design",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "This is a library for Mona software",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -11,7 +11,7 @@
   "scripts": {
     "build": "rollup -c",
     "test": "jest",
-    "storybook": "storybook dev -p 6006",
+    "dev": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
   "author": "anhtu pro",
@@ -64,6 +64,7 @@
     "@storybook/addon-themes": "^7.6.2",
     "add": "^2.0.6",
     "autoprefixer": "^10.4.16",
+    "clsx": "^2.0.0",
     "node-sass": "^9.0.0",
     "react-icons": "^4.12.0",
     "rollup-plugin-postcss": "^4.0.2"
