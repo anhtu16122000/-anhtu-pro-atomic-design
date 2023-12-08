@@ -1,10 +1,13 @@
 .root {
-  border-radius: 6px;
   font-weight: 600;
   display: flex;
   gap: 4px;
   align-items: center;
-  background-color: red;
+  justify-content: center;
+}
+.loading {
+  opacity: 0.8;
+  cursor: default;
 }
 
 .sizeSm {
@@ -57,7 +60,7 @@
 }
 
 .btn-edit {
-  background-color: #0e9de0;
+  background-color: #f77f35;
   color: #fff;
 }
 
@@ -67,12 +70,12 @@
 }
 
 .btn-import {
-  background-color: #0989ff;
+  background-color: rgba(111, 9, 255, 0.649);
   color: #fff;
 }
 
 .btn-export {
-  background-color: #f77f35;
+  background-color: rgb(255, 0, 195);
   color: #fff;
 }
 

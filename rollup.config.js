@@ -4,6 +4,7 @@ const typescript = require('@rollup/plugin-typescript');
 const dts = require('rollup-plugin-dts').default;
 const tailwindcss = require('tailwindcss');
 const postcss = require('rollup-plugin-postcss')
+const babel = require('@rollup/plugin-babel').default;
 
 const tailwindConfig = require('./tailwind.config.js');
 
@@ -11,6 +12,7 @@ const packageJson = require('./package.json');
 
 module.exports = [
   {
+    external: ['react', 'react-dom', 'react/jsx-runtime'],
     input: 'src/index.ts',
     output: [
       {
@@ -35,6 +37,14 @@ module.exports = [
           insertAt: 'top'
         },
         plugins: [tailwindcss(tailwindConfig)],
+      }),
+      babel({
+        babelHelpers: 'bundled',
+        exclude: 'node_modules/**', // Exclude node_modules
+        presets: [
+          '@babel/preset-env', // Enable transpilation for modern JavaScript features
+          '@babel/preset-react', // Enable React JSX support
+        ],
       }),
       resolve(),
       commonjs(),

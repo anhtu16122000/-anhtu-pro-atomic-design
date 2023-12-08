@@ -1,6 +1,6 @@
 {
   "name": "mona-design",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "This is a library for Mona software",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -43,7 +43,6 @@
     "babel-jest": "^29.7.0",
     "clean-publish": "^4.2.0",
     "css-loader": "^6.8.1",
-    "daisyui": "^4.4.19",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^29.7.0",
     "postcss": "^8.4.32",
@@ -64,14 +63,10 @@
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
   },
-  "externals": {
-    "react": "react",
-    "react-dom": "react-dom"
-  },
-  "libraryTarget": "commonjs2",
   "dependencies": {
     "@storybook/addon-themes": "^7.6.2",
     "add": "^2.0.6",
+    "antd": "^5.12.1",
     "autoprefixer": "^10.4.16",
     "clsx": "^2.0.0",
     "node-sass": "^9.0.0",
